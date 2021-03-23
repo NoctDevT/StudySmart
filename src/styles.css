@@ -1,0 +1,146 @@
+/* 
+@font-face {
+  font-family: 'movement';
+  src: url('../../fonts/MovementV.ttf') format('truetype');
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=B612&display=swap");
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: grey;
+}
+
+.video {
+  min-height: 99%;
+  position: fixed;
+  /* padding-bottom: 56.25%; */
+  /* padding-top: 15px; */
+
+  padding-bottom: 4.25%;
+  width: 300%; /* enlarge beyond browser width */
+  left: -100%; /* center */
+  pointer-events: none;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 100%;
+  background-color: black;
+}
+
+.sidebar {
+  position: absolute;
+  background-color: #31353d;
+
+  left: 90%;
+  width: 10%;
+  height: 100%;
+  z-index: 1;
+}
+
+.titleHeader {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  color: #6c757d;
+  border-bottom: 1px solid #6c757d;
+  font-family: "B612", sans-serif;
+}
+
+.streamContainer {
+  margin-top: 18px;
+  opacity: 70%;
+  height: 80px;
+  overflow-y: scroll;
+}
+
+.listItem {
+  font-size: 14px;
+  position: relative;
+  left: 3%;
+  width: 97%;
+  padding-bottom: 7px;
+  color: rgb(158, 167, 175);
+  list-style-type: none;
+  display: list-item;
+  cursor: pointer;
+}
+
+.streamContents {
+  font-size: 17px;
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(158, 167, 175);
+  font-family: "B612", sans-serif;
+}
+
+.todo_list {
+  padding-top: 20px;
+}
+
+.todo_input {
+  width: 50%;
+}
+
+.todoInputContainer {
+  padding-top: 20px;
+  opacity: 80%;
+}
+
+.todo_title {
+  font-size: 14px;
+  color: rgb(158, 167, 175);
+
+  padding-top: 20px;
+}
+
+.todo_item {
+  opacity: 80%;
+
+  padding-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.todoContainer {
+  padding-top: 20px;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.taskTitle {
+  padding-top: 20px;
+}
+
+.inputTitle {
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: rgb(158, 167, 175);
+}
